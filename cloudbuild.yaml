@@ -5,3 +5,4 @@ steps:
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy", "--stop-previous-version"]
 timeout: "1600s"
+option: CLOUD_LOGGING_ONLY
