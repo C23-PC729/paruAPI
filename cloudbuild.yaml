@@ -1,8 +1,0 @@
-steps:
-  - name: node:18.13.0
-    entrypoint: npm
-    args: ["install"]
-  - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "--stop-previous-version"]
-timeout: "1600s"
-options: CLOUD_LOGGING_ONLY
